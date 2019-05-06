@@ -20,3 +20,25 @@ $("#reset").on("click", function() {
 $("#clear").on("click", function() {
     $(".tile").css("display", "none");
 });
+
+//Hides the text and bring up the form for input
+ $("#txt").dblclick(function() {
+    	$("#txt").hide();
+    	$("#frm").css({"display":"block"});
+    	$("#edittext").text($("#txt").text());
+    	$("#sub").prop("type", "button");
+    });
+//Takes the content of the form and updates the text accordingly before hiding the form
+    $("#sub").click(function() {
+    	$("#txt").text($("#edittext").val());
+    	$("#txt").css({"display":"block"});
+    	$("#frm").hide();
+    });
+
+//Handles swapping the images by using an array as a queue
+    var images = [ "assignment-2-photos/avl.png", "assignment-2-photos/rbtree.jpg", "assignment-2-photos/tree2.jpg", "assignment-2-photos/tree.jpg" ];
+    $("#image").click(function() {
+    	var x = images.shift();
+    	$("#image").attr("src", x);
+    	images.push(x);
+    });

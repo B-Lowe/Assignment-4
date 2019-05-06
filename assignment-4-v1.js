@@ -36,7 +36,7 @@ $("#clear").on("click", function() {
     });
 
 //Handles swapping the images by using an array as a queue
-    var images = [ "assignment-2-photos/avl.png", "assignment-2-photos/rbtree.jpg", "assignment-2-photos/tree2.jpg", "assignment-2-photos/tree.jpg" ];
+    var images = [ "assignment-4-photos/avl.png", "assignment-4-photos/rbtree.jpg", "assignment-4-photos/tree2.jpg", "assignment-4-photos/tree.jpg" ];
     $("#image").click(function() {
     	var x = images.shift();
     	$("#image").attr("src", x);

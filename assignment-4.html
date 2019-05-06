@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 4</title>
+		<link href="assignment-4-stylesheet.css" type="text/css" rel="stylesheet"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+		<div class="wrapper-top">
+			<div class="top-box"></div>
+			<div class="navbar">
+				<div class="link">
+					<a>
+					ARBORVITAE
+					</a>
+					<div class="dropdown">
+						<a href="http://bhort.bh.cornell.edu/tree/arborvitae.htm" target="_blank">Info</a>
+						<a href="https://www.shutterstock.com/search/arborvitae" target="_blank">Photos</a>
+					</div>
+				</div>
+
+				<div class="link">
+					<a>
+					BLACK ASH
+					</a>
+					<div class="dropdown">
+							<a href="http://bhort.bh.cornell.edu/tree/blackash.htm" target="_blank">Info</a>
+							<a href="https://www.shutterstock.com/search/Fraxinus+nigra" target="_blank">Photos</a>
+						</div>
+				</div>
+
+				<div class="link">
+					<a>
+					WHITE ASH
+					</a>
+					<div class="dropdown">
+						<a href="http://bhort.bh.cornell.edu/tree/whiteash.htm" target="_blank">Info</a>
+						<a href="https://www.shutterstock.com/search/Fraxinus+americana" target="_blank">Photos</a>
+					</div>
+				</div>
+
+				<div class="link">
+					<a>
+					BIGTOOTH ASPEN
+					</a>
+					<div class="dropdown">
+						<a href="http://bhort.bh.cornell.edu/tree/bigtoothaspen.htm" target="_blank">Info</a>
+						<a href="https://www.shutterstock.com/search/Populus+grandidentata" target=_blank>Photos</a>
+					</div>
+				</div>
+
+				<div class="link">
+					<a>
+					QUAKING ASPEN
+					</a>
+					<div class="dropdown">
+						<a href="http://bhort.bh.cornell.edu/tree/quakingaspen.htm" target="_blank">Info</a>
+						<a href="https://www.shutterstock.com/search/Quaking+Aspen" target="_blank">Photos</a>
+					</div>
+				</div>
+
+				<div class="link">
+					<a>
+					BASSWOOD
+					</a>
+					<div class="dropdown">
+						<a href="http://bhort.bh.cornell.edu/tree/basswood.htm" target="_blank">Info</a>
+						<a href="https://www.shutterstock.com/search/Tilia+americana" target="_blank">Photos</a>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="wrapper-bottom">
+			<div class="content">
+				<div class="contentHeading"> Trees, Trees, And More Trees </div>
+				<img src="assignment-4-photos/tree.jpg" class="imagebox" title="Tree" onclick="javascript:changeImage()" id="image">
+				<div>
+						<p id="txt" ondblclick="javascript:changeTextArea()">
+							
+							The greater portion of the land area of New York State is better adapted to growing trees than to any other use, making forestry a vital part of the State's agricultural programs.  Work in forestry appeals to old and young alike because of its outdoor nature and the possibility of combining activities in nature study, conservation, camping, and woodcraft.
+
+							To develop an appreciation of the forest is to know the importance of it to agriculture and industry, to acquire a thorough knowledge of the trees in the forest, and to know the relative values of these trees in producing crops of timber.  The first step is to become familiar with the various kinds of trees, the dominant members of the forest community.  Ideally the trees should be studied in the forest, in conditions most natural to their growth, but they can also be learned in the yard or parks.  Each tree species has certain characteristics that distinguish it from other kinds of trees.   In addition to the external characteristics, the wood of each tree species also varies.  In growing timber for a specific use or in choosing trees to be cut for a certain purpose, one must know what kinds of wood are required to best serve that purpose.
+							This bulletin has been prepared to assist in acquainting the reader with the forest trees in the neighborhood.  Perhaps a hundred species of trees are native to the State, but some of them such as alder, pussy willow, and witch hazel, are so small that they are scarcely more than shrubs in New York.  Other species such as the willow oak and the sweet gum on Long Island, while of real forest-tree size, are confined to very limited localities. No attempt has been made, therefore, to provide an all-inclusive list of trees in this publication.  Instead, fifty common tree species have been selected.  These species are generally distributed throughout the State and are likely to be found in the average woodlot.
+
+							With this bulletin as a guide, it should be possible for current and future landowners to become familiar with most forest trees in their neighborhood.   As future woodland owners, this basic knowledge of the trees of the forest will contribute to better management of our State's private forests.	
+						</p>
+						<form id="frm" style="display:none;">
+							<textarea id="edittext"></textarea>
+							<input type="hidden" value="submit" id="sub" onclick="javascript:fixTextArea()">
+						</form>
+				</div>
+				<div>
+						<H2>Tree Tiles</H2>
+						<div id="canvas">
+							<div class="tile">
+								<div class="tile-button"> X</div>
+								<img src="assignment-4-photos/tile-images/tree-1.jpg" class="listimage"/>
+								<div class="tile-title">Tile 1</div>
+							</div>
+							<div class="tile">
+								<div class="tile-button"> X</div>
+								<img src="assignment-4-photos/tile-images/tree-2.jpg" class="listimage"/>
+								<div class="tile-title">Tile 2</div>
+							</div>
+							<div class="tile">
+								<div class="tile-button"> X</div>
+								<img src="assignment-4-photos/tile-images/tree-4.jpg" class="listimage"/>
+								<div class="tile-title">Tile 4</div>
+							</div>
+							<div class="tile">
+								<div class="tile-button"> X</div>
+								<img src="assignment-4-photos/tile-images/tree-4.jpg" class="listimage"/>
+								<div class="tile-title">Tile 4</div>
+							</div>
+							<div class="tile">
+								<div class="tile-button"> X</div>
+								<img src="assignment-4-photos/tile-images/tree-5.jpg" class="listimage"/>
+								<div class="tile-title">Tile 5</div>
+							</div>
+							<div class="tile">
+								<div class="tile-button"> X</div>
+								<img src="assignment-4-photos/tile-images/tree-6.gif" class="listimage"/>
+								<div class="tile-title">Tile 6</div>
+							</div>
+							<div class="tile">
+								<div class="tile-button"> X</div>
+								<img src="assignment-4-photos/tile-images/tree-7.jpg" class="listimage"/>
+								<div class="tile-title">Tile 7</div>
+							</div>
+							<div class="tile">
+								<div class="tile-button"> X</div>
+								<img src="assignment-4-photos/tile-images/tree-8.jpg" class="listimage"/>
+								<div class="tile-title">Tile 8</div>
+							</div>
+							<div class="tile">
+								<div class="tile-button"> X</div>
+								<img src="assignment-4-photos/tile-images/tree-9.jpg" class="listimage"/>
+								<div class="tile-title">Tile 9</div>
+							</div>
+							<div class="tile">
+								<div class="tile-button"> X</div>
+								<img src="assignment-4-photos/tile-images/tree-10.jpg" class="listimage"/>
+								<div class="tile-title">Tile 10</div>
+							</div>
+							<div class="tile">
+								<div class="tile-button"> X</div>
+								<img src="assignment-4-photos/tile-images/tree-11.jpg" class="listimage"/>
+								<div class="tile-title">Tile 11</div>
+							</div>
+							<div class="tile">
+								<div class="tile-button"> X</div>
+								<img src="assignment-4-photos/tile-images/tree-12.jpg" class="listimage"/>
+								<div class="tile-title">Tile 12</div>
+							</div>
+						</div>
+						<div class="button" id="reset">
+							Reset
+						</div>
+						<div class="button" id="clear">
+							Clear
+						</div>
+				</div>
+			</div>
+			<footer>Made by Brenden Lowe and Blake Cecil for Assignment 2</footer>
+		</div>
+	</body>
+	<!--<script src="assignment-4.js"></script>-->
+	<script src="assignment-4-v1.js"></script>
+</html>
